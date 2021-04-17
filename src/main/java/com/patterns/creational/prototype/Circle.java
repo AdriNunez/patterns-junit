@@ -4,8 +4,7 @@ public class Circle extends Shape{
 
     private double radio;
 
-    public Circle(){
-    }
+
     public Circle(String color, double radio){
         super(color);
         this.radio = radio;
@@ -25,10 +24,8 @@ public class Circle extends Shape{
         return Math.PI*radio*radio;
     }
 
-    public Circle copyCircle(Circle circle) {
-        Circle c = new Circle();
-        c.setRadio(circle.getRadio());
-        return c;
+    public Circle clone() throws CloneNotSupportedException {
+        return (Circle) super.clone();
     }
 
     @Override

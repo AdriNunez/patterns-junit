@@ -20,7 +20,7 @@ public class CircleTest {
     @DisplayName("Clone")
     void testClone() throws CloneNotSupportedException{
         Circle circle =  new Circle("amarillo", 2.0);
-        Circle circleClonado = circle.copyCircle(circle);
+        Circle circleClonado = circle.clone();
 
         assertNotEquals(circle, circleClonado);
 
