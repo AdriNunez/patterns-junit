@@ -52,13 +52,13 @@ class BookShopTest {
     }
 
     @Test
-    @DisplayName("addBookNull")
+    @DisplayName("Add a null book")
     public void addBookNull() {
 
         book = null;
-       // verify(bookShop).addBook(bookArgumentCaptor.capture());
-
-        //assertEquals(null, bookArgumentCaptor.getValue());
+        bookShop.addBook(book);
+        verify(bookShop).addBook(bookArgumentCaptor.capture());
+        assertEquals(null,bookArgumentCaptor.getValue());
 
     }
 
