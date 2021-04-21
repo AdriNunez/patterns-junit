@@ -6,7 +6,7 @@ public class Circle extends Shape{
 
 
     public Circle(){
-        this.radio = radio;
+
     }
 
     public Circle(String color, double radio){
