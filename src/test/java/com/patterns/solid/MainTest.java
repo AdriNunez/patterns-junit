@@ -1,4 +1,4 @@
-package com.patterns.solid;
+/*package com.patterns.solid;
 
 import org.junit.jupiter.api.Test;
 
@@ -12,3 +12,5 @@ class MainTest {
 
 
 }
+
+ */

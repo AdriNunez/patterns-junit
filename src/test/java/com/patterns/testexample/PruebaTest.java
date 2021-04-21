@@ -1,4 +1,4 @@
-package com.patterns.testexample;
-
-public class PruebaTest {
-}
+//package com.patterns.testexample;
+//
+//public class PruebaTest {
+//}

@@ -15,14 +15,16 @@ class CalculatorTest {
         assertEquals(25, calc.multiply(5,5));
     }
 
-    @Test
-    void sumTest(){
-        System.out.println("Suma");
-    }
-
-
-    @Test
-    void subTest(){
-        System.out.println("Resta");
-    }
+//    @Test
+//    void sumTest(){
+//        Calculator calc = new Calculator();
+//
+//
+//    }
+//
+//
+//    @Test
+//    void subTest(){
+//        System.out.println("Resta");
+//    }
 }
