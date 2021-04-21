@@ -1,9 +1,14 @@
 package com.patterns.main;
 
+import com.patterns.behavioral.iterator.iterator1.BookShop;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Main {
 
 
     public static void main(String[] args) {
-        System.out.println("Hola mundo!");
+        Logger log = LoggerFactory.getLogger(Main.class);
+        log.info("Hola mundo");
     }
 }
