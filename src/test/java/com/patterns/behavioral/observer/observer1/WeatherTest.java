@@ -78,6 +78,8 @@ class WeatherTest {
         WeatherType type = WeatherType.RAINY;
         WeatherObserver computer = new Computer();
         computer.update(type);
+        assertNotEquals("null",computer.getClass().getTypeName());
+
 
 
 
