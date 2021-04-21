@@ -1,6 +1,9 @@
 package mockito.iterator.iterator1;
 
+import com.patterns.solid.Car;
 import org.junit.jupiter.api.Tag;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +12,7 @@ import java.util.Optional;
 @Tag("database")// Es una etiqueta para que en la clase SuiteTest podamos definir que se ejecuten las clases
                 // o métodos que queramos seleccionandolos por etiqueta "@Tag"
 public class BookShop implements IBookShop {
-
+    Logger log = LoggerFactory.getLogger(BookShop.class);
     // estructura datos interna
     List<Book> books;
 
@@ -37,7 +40,7 @@ public class BookShop implements IBookShop {
 
     // metodo que devuelve el tamaño de la librería
     public int getSize() {
-        System.out.println("getSize(): " + books.size());
+        log.info("getsize()"+ books.size());
         return books.size();
     }
 
