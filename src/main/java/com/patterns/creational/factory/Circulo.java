@@ -5,7 +5,6 @@ public class Circulo extends Figura{
     private int radio;
     public Circulo(){}
     public Circulo(int radio){
-        this.radio = radio;
     }
 
     public int getRadio() {
