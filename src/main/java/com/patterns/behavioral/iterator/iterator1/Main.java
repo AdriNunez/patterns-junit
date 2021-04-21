@@ -19,7 +19,7 @@ public class Main {
         CustomIterator iterador = books.iterator();
         while (iterador.hasNext()){
             Book book = (Book) iterador.next();
-                log.info(String.valueOf(book));
+                log.info(""+ book);
         }
 
 

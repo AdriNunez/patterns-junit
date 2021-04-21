@@ -14,7 +14,7 @@ class ConcreteSubjectTest {
         Observer bloomberg = new ConcreteObserver("bloomberg");
         assertEquals(0, elon.observers.size());
         elon.addSubscriber(bloomberg);
-        assertSame(elon.handle,"@elonmusk");
+        assertSame("@elonmusk",elon.handle);
         assertEquals(1, elon.observers.size());
 
     }
