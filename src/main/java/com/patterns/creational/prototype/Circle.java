@@ -30,7 +30,8 @@ public class Circle extends Shape{
 
     public Circle cloneCircle() {
         Circle circle = new Circle();
-        circle.radio = this.radio;
+        circle.setRadio(this.getRadio());
+        circle.setColor(this.getColor());
         return circle;
     }
 
