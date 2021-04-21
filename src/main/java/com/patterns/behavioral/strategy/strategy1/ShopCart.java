@@ -5,6 +5,7 @@ import java.util.List;
 
 public class ShopCart {
 
+
     private List<Product> products;
 
     public ShopCart() {
@@ -17,6 +18,10 @@ public class ShopCart {
 
     public void removeProduct(Product product){
         this.products.remove(product);
+    }
+
+    public List<Product> getProducts(){
+        return products;
     }
 
     // pagar utilizando una estrategia de pago
