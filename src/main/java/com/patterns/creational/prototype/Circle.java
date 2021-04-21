@@ -5,6 +5,10 @@ public class Circle extends Shape{
     private double radio;
 
 
+    public Circle(){
+        this.radio = radio;
+    }
+
     public Circle(String color, double radio){
         super(color);
         this.radio = radio;
@@ -24,8 +28,10 @@ public class Circle extends Shape{
         return Math.PI*radio*radio;
     }
 
-    public Circle clone() throws CloneNotSupportedException {
-        return (Circle) super.clone();
+    public Circle cloneCircle() {
+        Circle circle = new Circle();
+        circle.radio = this.radio;
+        return circle;
     }
 
     @Override
