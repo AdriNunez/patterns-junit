@@ -2,6 +2,9 @@ package com.patterns.behavioral.iterator.iterator1;
 
 import org.junit.jupiter.api.Tag;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,6 +12,7 @@ import java.util.List;
                 // o métodos que queramos seleccionandolos por etiqueta "@Tag"
 public class BookShop implements IBookShop{
 
+    private static final Logger LOG = LoggerFactory.getLogger(BookShop.class);
     // estructura datos interna
     List<Book> books;
 
@@ -30,7 +34,7 @@ public class BookShop implements IBookShop{
 
     // metodo que devuelve el tamaño de la librería
     public int getSize() {
-        System.out.println("getSize(): " + books.size());
+        LOG.info("Size of the bookshop");
         return books.size();
     }
 
