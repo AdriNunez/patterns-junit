@@ -1,12 +1,9 @@
 package com.patterns.solid;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 public class Main {
 
     public static void main(String[] args) {
-        Logger log = LoggerFactory.getLogger(ElectricCar.class);
+
         String carType = "electric";
 
         ICar car;
@@ -15,8 +12,8 @@ public class Main {
         } else if ("electric".equals(carType)) {
             car = new ElectricCar();
         }else{
-            log.info("Error");
+            throw new RuntimeException("Invalid car");
         }
-
+        car.accelerate();
     }
 }

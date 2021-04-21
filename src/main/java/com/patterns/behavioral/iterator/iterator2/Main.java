@@ -25,12 +25,12 @@ public class Main {
         Iterator<Book> iterador = books.iterator();
         while (iterador.hasNext()){
             Book book = iterador.next();
-            log.info(""+book);
+            log.info(book.toString());
         }
         log.info("==========");
 
         for (Book book: books) {
-           log.info(""+book);
+           log.info(book.toString());
         }
     }
 }
