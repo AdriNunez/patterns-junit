@@ -29,10 +29,10 @@ public class Circle extends Shape{
     }
 
     public Circle cloneCircle() {
-        Circle circle = new Circle();
-        circle.setRadio(this.getRadio());
-        circle.setColor(this.getColor());
-        return circle;
+        Circle var = new Circle();
+        var.setRadio(this.getRadio());
+        var.setColor(this.getColor());
+        return var;
     }
 
     @Override

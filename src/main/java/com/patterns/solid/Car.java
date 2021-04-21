@@ -1,5 +1,4 @@
 package com.patterns.solid;
-
 import com.patterns.main.Main;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
